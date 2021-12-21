@@ -79,11 +79,6 @@ client.on(`message`, async (message) => {
   let prefix = await db.get(`prefix_${message.guild.id}`)
   //if not prefix set it to standard prefix in the config.json file
   if(prefix === null) prefix = PREFIX;
-
-  //information message when the bot has been tagged
-  if(message.content.includes(client.user.id)) {
-    message.reply(new Discord.MessageEmbed().setColor("#F0EAD6").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
-  } 
   //An embed announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}embed`)){
     //define saymsg
@@ -92,7 +87,7 @@ client.on(`message`, async (message) => {
     const embed = new Discord.MessageEmbed()
     .setColor("#F0EAD6")
     .setDescription(saymsg)
-    .setFooter("Harmony", client.user.displayAvatarURL())
+    .setFooter("Chirp", client.user.displayAvatarURL())
     //delete the Command
     message.delete({timeout: 300})
     //send the Message
