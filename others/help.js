@@ -18,7 +18,7 @@ module.exports = {
     let helpEmbed = new MessageEmbed()
       .setTitle("Chirp Help")
       .setAuthor('Click here to invite me!', 'https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif', 'https://discord.com/api/oauth2/authorize?client_id=921492170555420762&permissions=1458961729&scope=bot')
-      .setAuthor('Support Server!', 'https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif', 'https://discord.gg/qNgakFSkPJ')
+      .setAuthor('Support Server!', 'https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif', 'https://discord.com/api/oauth2/authorize?client_id=921492170555420762&permissions=1458961729&scope=bot')
       .setDescription(`**PREFIX:** \`${PREFIX}\``)
       .setFooter( client.user.username +`Type: ${PREFIX}help <Command>  for more information!`, "https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif")
       .setColor("#F0EAD6");
